@@ -159,7 +159,7 @@ html {
     .header ul
     {
       flex-direction: row;
-      gap: 18px;
+      gap: 12px;
       padding-bottom: 12px;
       font-size: 12px;
       border-bottom: 1px solid lightgrey;
