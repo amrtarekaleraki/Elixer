@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; */
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  transition: 0.5s;
+}
+
+.header ul li a:hover {
+  color: #f87171;
+}
+
+.header a img {
+  width: auto;
+  max-width: 170px;
+  max-height: 4rem;
+}
+
+/* end header */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/hero.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* end hero img */
+
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+  background: #fff;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.card1-paragraph
+{
+  text-align: right;
+}
+.card2-paragraph
+{
+  text-align: left;
+}
+.card3-paragraph
+{
+  text-align: right;
+}
+
+
+/* end card  */
+
+
+.footer
+{
+    margin-top: 100px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 50px;
+}
+
+.footer h3 
+{
+    margin-bottom: 20px;
+}
+
+.footer-icons
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons a
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.footer-icons a i 
+{
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+}
+
+.copy-right
+{
+    margin-top: 50px;
+}
+
+/* end footer */
+
+
+
+/* start responsive */
+
+@media screen and (max-width: 1024px) 
+{
+    .header
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .header a img 
+    {
+      max-height: 8rem;
+    }
+
+    .header ul
+    {
+      flex-direction: row;
+      gap: 18px;
+      padding-bottom: 12px;
+      font-size: 12px;
+      border-bottom: 1px solid lightgrey;
+      margin-bottom: 20px;
+    }
+
+    .card1
+    {
+        width: 95%;
+    }
+
+    .hero {
+      height: 32vh;
+      background-size: cover;
+    }
+
+
+}
